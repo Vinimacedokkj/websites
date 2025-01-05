@@ -1,0 +1,1301 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif, Arial, Helvetica;
+}
+
+/*------------CABEÇALHO------------*/
+/* Barra cinza contendo todos os elementos */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434343;
+  height: 8rem;
+}
+
+/* Container pai da imagem (esquerda) */
+.logo {
+  margin-left: 10px;
+}
+
+/* Imagem */
+.logo img {
+  width: auto;
+  height: 100px;
+}
+
+/* Container pai de todos os elmenetos (direita) */
+.nav-bar {
+  width: 50rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Container da lista não ordenada */
+.nav-bar  ul {
+  display: flex;
+  width: 100%;
+}
+
+/* Cada 'li' da lista não ordenada */
+.nav-bar ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Todos os 'a' da lista não ordenada (todos os links) */
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.70rem;
+}
+
+/*------------MAIN------------*/
+/* Conteúdo principal contendo todas as informações da página */
+main {
+  height: 100%;
+}
+
+/* Sessão do início, área toda que o background-image cobre */
+.home {
+  height: 100vh;
+  background-image: url('images/others/home-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(5, auto);
+
+}
+
+/* Container pai dos textos (h1 e p) e filho do .home */
+.home .home-description {
+  grid-row: 2 / 5;
+  grid-column: 2 /10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título principal h1 (AutoShine Services Estética automotiva) */
+.home .home-description h1 {
+  color: #fff;
+  font-size: 7rem;
+}
+
+/* Parágrafo abaixo do título h1 */
+.home .home-description p {
+  color: white;
+  font-size: 2.4em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1)
+}
+
+/* Container div pai do botão ESQUERDO */
+.btn-left {
+  grid-row: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.62rem;
+}
+
+/* Container div pai do botão DIREITO */
+.btn-right {
+  grid-row: 3;
+  grid-column: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.62rem;
+}
+
+/* Propriedade que personaliza os dois botões filhos das divs ao mesmo tempo */
+.btn button {
+  width: 4em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+/* Imagem dentro do botão (setas direita e esquerda) */
+.btn img {
+  width: 30%;
+  height: auto;
+}
+
+/*------------SOBRE NÓS------------*/
+/* Sessão que aborda tudo sobre a empresa */
+
+/* Container pai principal da sessão "sobre nós" */
+.about-us article {
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.87rem;
+}
+
+/* Container do título h2 */
+.about-us .first-block {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* h2 da sessão sobre nós */
+.about-us h2 {
+  font-size: 4rem; 
+}
+
+/* Container pai dos textos e da imagem */
+.about-us .second-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12%;
+  height: 100%;
+}
+
+/* Descrição (texto) */
+.about-us .description {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* todos os parágrafos dentro do container da .description */
+.about-us .description p {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  font-size: 1.4rem;
+}
+
+/* Imagem */
+.about-us img {
+  width: auto;
+  height: 31.25rem;
+}
+
+/* Container pai de saiba mais */
+.about-us .learn-more {
+  margin-bottom: 1rem;
+}
+
+/* link como texto em saiba mais */
+.about-us .learn-more a {
+  font-size: 1.50rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover em saiba mais */
+.about-us .learn-more:hover {
+  cursor: pointer;
+}
+
+/* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+.about-us .learn-more img {
+  width: 1.25rem;
+  height: auto;
+}
+
+/*------------SERVIÇOS------------*/
+/* Container maior e geral da seção "serviços" */
+.services-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: black;
+  padding-bottom: 1.25rem;
+}
+
+/* O heading dentro da seção de serviços */
+.services-section h2 {
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem; 
+}
+
+/* Container contendo todos os serviços para agendamento */
+.services-section .container {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000;
+  padding: 20px;
+}
+
+/* Bloco pai que armazena cada serviço */
+.services-section .container .services {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 31%;
+  height: auto;
+  border-radius: 50px;
+  gap: 3.75rem;
+  padding: 1.85rem 0;
+  box-sizing: border-box;
+}
+
+/* Primeira div dentro do bloco pai armazenando cada serviço */
+.services-div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.6rem;
+}
+
+/* Adicionando um gap maior para aqueles que têm pouco texto */
+.services .services-div1-mod {
+  gap: 3rem;
+}
+
+/* Personalizando alguns serviços específicos: 3, 8 e 11 */
+#third-service, #eighth-service, #eleventh-service {
+  gap: 1.18rem;
+}
+
+/* Cada elemento abaixo está dentro de uma div */
+/* DIV do h3. Texto presente nos serviços */
+.services .heading3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Alterando as propriedades do h3 dentro do bloco branco de serviços */
+.services .heading3 h3 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 2.75rem;
+}
+
+/* DIV da imagem (não faz nenhuma alteração na imagem em si) */
+.services .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+/* Alterando as propriedades da imagem dentro do bloco branco de serviços */
+.services-section .services img {
+  width: 100%;
+  height: auto;
+}
+
+/* DIV do texto */
+.services .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Descrição do serviço */
+.services-section .services p {
+  width: 90%;
+  height: 6.25rem;
+  font-size: 1.25rem;
+}
+
+/* DIV pai do botão */
+.services-section .services-div2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botão do serviço */
+.services-section .services .services-div2 button {
+  width: 80%;
+  height: 3.75rem;
+  border-radius: 1.87rem;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 1.55rem;
+}
+
+/* Hover do botão */
+.services-section .services button:hover {
+  cursor: pointer;
+  background-color: #182e6a;
+}
+
+/*------------GALERIA------------*/
+/* DIV pai da heading da galeria */
+.gallery-section .gallery-heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+/* Personalizando o heading */
+.gallery-section .gallery-heading h2 {
+  font-size: 3rem;
+}
+
+/* DIV pai de toda a galeria contendo todas as imagens */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+  gap: 10px;
+}
+
+/* Customizando a imagem em específico */
+.gallery img {
+  width: 32%;
+  height: 18.75rem;
+}
+
+/*------------FOOTER------------*/
+/* Container pai, container maior */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding-top: 3rem;
+}
+
+/* Personalizando lista, linnk, heading e parágrafo */
+.footer li, .footer a, .footer h2, .footer ul, .footer p {
+  color: #fff;
+}
+
+.footer li, .footer a, .footer p {
+  font-size: 1.2rem;
+}
+
+/* Personalizando todas as Headings do footer */
+.footer h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* Personalizando todas os li da ul do footer */
+.footer li {
+  list-style: none;
+}
+
+/* Personalizando todos os links do footer */
+.footer li a {
+  text-decoration: none;
+}
+
+/* Dentro do footer, são contidos dois blocos, um para o contato, redes sociais, links e serviços */
+/* O outro é para o copyright */
+
+/* Primeiro bloco dentro do container pai, que é o footer */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+/* Segundo bloco dentro do container pai */
+.alone {
+  text-align: center;
+}
+
+/* Este é o primeiro bloco dentro do primeiro bloco */
+/* No caso será o bloco pai que envolve o contato e as redes sociais */
+.footer .first-block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bloco filho do de cima, porém este é só do contato */
+.footer .first-block .contact {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Bloco também filho, porém é o de redes sociais */
+.footer .first-block .social-media {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+
+/* Container pai das imagens (é um container filho do .social-media) */
+.footer .first-block .social-media .image {
+  display: flex;
+  gap: 0.62rem;
+}
+
+/* Personalizando as redes sociais (no caso o instagram e o facebook) */
+.footer .social-media img {
+  width: 1.8rem;
+  height: auto;
+}
+
+/* Segundo bloco, personalizando os links úteis */
+.footer .second-block {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Personalizando as headings dentro dos links */
+.footer .second-block h2 {
+  position: relative;
+  left: 30%;
+}
+
+/* listas dentro dos links úteis */
+.footer .second-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+  left: 30%;
+}
+
+/* Terceiro bloco, o de serviços */
+.footer .third-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Listas do terceiro bloco */
+.footer .third-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Parte onde está escrito o "AutoShine Services" (contendo o copyright) */
+.alone .copyright p {
+  display: block;
+  padding: 1rem 0;
+  border-top: 1px solid white;
+}
+
+/* ----------------------------------------------------Começo das media queries---------------------------------------------------- */
+
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 12px;
+  }
+
+/*------------CABEÇALHO------------*/
+/* Barra cinza contendo todos os elementos */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434343;
+  height: 10rem;
+}
+
+/* Container pai da imagem (esquerda) */
+.logo {
+  margin-left: 10px;
+}
+
+/* Imagem */
+.logo img {
+  width: auto;
+  height: 100px;
+}
+
+/* Container pai de todos os elmenetos (direita) */
+.nav-bar {
+  width: 50rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Container da lista não ordenada */
+.nav-bar  ul {
+  display: flex;
+  width: 100%;
+}
+
+/* Cada 'li' da lista não ordenada */
+.nav-bar ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Todos os 'a' da lista não ordenada (todos os links) */
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.70rem;
+}
+
+/*------------SOBRE NÓS------------*/
+/* Sessão que aborda tudo sobre a empresa */
+
+/* Container pai principal da sessão "sobre nós" */
+.about-us article {
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.87rem;
+}
+
+/* Container do título h2 */
+.about-us .first-block {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* h2 da sessão sobre nós */
+.about-us h2 {
+  font-size: 4rem;
+  padding: 30px 0;
+}
+
+/* Container pai dos textos e da imagem */
+.about-us .second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 0.8rem;
+}
+
+/* Descrição (texto) */
+.about-us .description {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* todos os parágrafos dentro do container da .description */
+.about-us .description p {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  font-size: 1.7rem;
+}
+
+/* Imagem */
+.about-us img {
+  width: auto;
+  height: 31.25rem;
+}
+
+/* Container pai de saiba mais */
+.about-us .learn-more {
+  margin-bottom: 1rem;
+}
+
+/* link como texto em saiba mais */
+.about-us .learn-more a {
+  font-size: 1.50rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover em saiba mais */
+.about-us .learn-more:hover {
+  cursor: pointer;
+}
+
+/* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+.about-us .learn-more img {
+  width: 1.25rem;
+  height: auto;
+}
+
+/*------------SERVIÇOS------------*/
+/* Container contendo todos os serviços para agendamento */
+.services-section .container {
+  width: 100%;
+  gap: 4rem; /* Tamanho original: 2rem */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000;
+  padding: 20px;
+}
+
+/* Bloco pai que armazena cada serviço */
+.services-section .container .services {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40%; /* Tamanho original: 31% */
+  height: auto;
+  border-radius: 50px;
+  gap: 3.75rem;
+  padding: 1.85rem 0;
+  box-sizing: border-box;
+}
+
+
+}
+
+@media (max-width: 940px) {
+/*------------MAIN------------*/
+/* Conteúdo principal contendo todas as informações da página */
+main {
+  height: 100%;
+}
+
+/* Sessão do início, área toda que o background-image cobre */
+.home {
+  height: 100vh;
+  background-image: url('images/others/home-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(5, auto);
+
+}
+
+/* Container pai dos textos (h1 e p) e filho do .home */
+.home .home-description {
+  grid-row: 2 / 5;
+  grid-column: 2 /10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título principal h1 (AutoShine Services Estética automotiva) */
+.home .home-description h1 {
+  color: #fff;
+  font-size: 6rem;
+}
+
+/* Parágrafo abaixo do título h1 */
+.home .home-description p {
+  color: white;
+  font-size: 2.2em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1)
+}
+
+/*------------SOBRE NÓS------------*/
+/* Sessão que aborda tudo sobre a empresa */
+
+/* Container pai principal da sessão "sobre nós" */
+.about-us article {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.87rem;
+}
+
+/* Container do título h2 */
+.about-us .first-block {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* h2 da sessão sobre nós */
+.about-us h2 {
+  font-size: 4rem;
+  padding: 30px 0;
+}
+
+/* Container pai dos textos e da imagem */
+.about-us .second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 0.8rem;
+}
+
+/* Descrição (texto) */
+.about-us .description {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 10px 0;
+}
+
+/* todos os parágrafos dentro do container da .description */
+.about-us .description p {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  font-size: 1.7rem;
+}
+
+/* Imagem */
+.about-us img {
+  width: auto;
+  height: 31.25rem;
+}
+
+/* Container pai de saiba mais */
+.about-us .learn-more {
+  margin-bottom: 1rem;
+}
+
+/* link como texto em saiba mais */
+.about-us .learn-more a {
+  font-size: 1.50rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover em saiba mais */
+.about-us .learn-more:hover {
+  cursor: pointer;
+}
+
+/* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+.about-us .learn-more img {
+  width: 1.25rem;
+  height: auto;
+}
+
+}
+
+@media (max-width: 825px) {
+
+/* NESSE MOMENTO O CABEÇALHO PRECISA SUMIR E APARECER UM ÍCONE COM 3 BARRINHAS ONDE SERÁ CLICÁVEL */
+
+
+/*------------MAIN------------*/
+/* Conteúdo principal contendo todas as informações da página */
+main {
+  height: 100%;
+}
+
+/* Sessão do início, área toda que o background-image cobre */
+.home {
+  height: 100vh;
+  background-image: url('images/others/home-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(5, auto);
+
+}
+
+/* Container pai dos textos (h1 e p) e filho do .home */
+.home .home-description {
+  grid-row: 2 / 5;
+  grid-column: 2 /10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título principal h1 (AutoShine Services Estética automotiva) */
+.home .home-description h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+
+/* Parágrafo abaixo do título h1 */
+.home .home-description p {
+  color: white;
+  font-size: 2.2em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1)
+}
+
+/*------------SOBRE NÓS------------*/
+/* Sessão que aborda tudo sobre a empresa */
+
+/* Container pai principal da sessão "sobre nós" */
+.about-us article {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.87rem;
+}
+
+/* Container do título h2 */
+.about-us .first-block {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* h2 da sessão sobre nós */
+.about-us h2 {
+  font-size: 4rem;
+  padding: 30px 0 0 0;
+}
+
+/* Container pai dos textos e da imagem */
+.about-us .second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 0.8rem;
+}
+
+/* Descrição (texto) */
+.about-us .description {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 10px 0;
+}
+
+/* todos os parágrafos dentro do container da .description */
+.about-us .description p {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  font-size: 1.7rem;
+}
+
+/* Imagem */
+.about-us img {
+  width: auto;
+  height: 31.25rem;
+}
+
+/* Container pai de saiba mais */
+.about-us .learn-more {
+  margin-bottom: 1rem;
+}
+
+/* link como texto em saiba mais */
+.about-us .learn-more a {
+  font-size: 1.50rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover em saiba mais */
+.about-us .learn-more:hover {
+  cursor: pointer;
+}
+
+/* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+.about-us .learn-more img {
+  width: 1.25rem;
+  height: auto;
+}
+
+/*------------FOOTER------------*/
+/* Container pai, container maior */
+.footer {
+  border: 3px solid yellow;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  padding-top: 3rem;
+}
+
+/* Personalizando lista, linnk, heading e parágrafo */
+.footer li, .footer a, .footer h2, .footer ul, .footer p {
+  color: #fff;
+}
+
+.footer li, .footer a, .footer p {
+  font-size: 1.1rem;
+}
+
+/* Personalizando todas as Headings do footer */
+.footer h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* Personalizando todas os li da ul do footer */
+.footer li {
+  list-style: none;
+}
+
+/* Personalizando todos os links do footer */
+.footer li a {
+  text-decoration: none;
+}
+
+/* Dentro do footer, são contidos dois blocos, um para o contato, redes sociais, links e serviços */
+/* O outro é para o copyright */
+
+/* Primeiro bloco dentro do container pai, que é o footer */
+.flex-container {
+  border: 3px solid blue;
+
+  display: flex;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+/* Segundo bloco dentro do container pai */
+.alone {
+  border: 3px solid green;
+
+  text-align: center;
+}
+
+/* Este é o primeiro bloco dentro do primeiro bloco */
+/* No caso será o bloco pai que envolve o contato e as redes sociais */
+.footer .first-block {
+  border: 3px solid cyan;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bloco filho do de cima, porém este é só do contato */
+.footer .first-block .contact {
+  border: 3px solid brown;
+
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Bloco também filho, porém é o de redes sociais */
+.footer .first-block .social-media {
+  border: 3px solid fuchsia;
+
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+
+/* Container pai das imagens (é um container filho do .social-media) */
+.footer .first-block .social-media .image {
+  border: 3px solid navy;
+
+  display: flex;
+  gap: 0.62rem;
+}
+
+/* Personalizando as redes sociais (no caso o instagram e o facebook) */
+.footer .social-media img {
+  width: 1.8rem;
+  height: auto;
+}
+
+/* Segundo bloco, personalizando os links úteis */
+.footer .second-block {
+  border: 3px solid chocolate;
+
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Personalizando as headings dentro dos links */
+.footer .second-block h2 {
+  position: relative;
+  left: 30%;
+}
+
+/* listas dentro dos links úteis */
+.footer .second-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+  left: 30%;
+}
+
+/* Terceiro bloco, o de serviços */
+.footer .third-block {
+  border: 3px solid darkgreen;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Listas do terceiro bloco */
+.footer .third-block ul {
+  border: 3px solid lavender;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Parte onde está escrito o "AutoShine Services" (contendo o copyright) */
+.alone .copyright p {
+  display: block;
+  padding: 1rem 0;
+  border-top: 1px solid white;
+  font-size: 1.2rem;
+}
+
+}
+
+@media(max-width: 740px) {
+/*------------CABEÇALHO------------*/
+
+/* Barra cinza contendo todos os elementos */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434343;
+  height: 10rem;
+}
+
+/* Container pai da imagem (esquerda) */
+.logo {
+  margin-left: 10px;
+}
+
+/* Imagem */
+.logo img {
+  width: auto;
+  height: 100px;
+}
+
+/* Container pai de todos os elmenetos (direita) */
+.nav-bar {
+  width: 50rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Container da lista não ordenada */
+.nav-bar  ul {
+  display: flex;
+  width: 100%;
+}
+
+/* Cada 'li' da lista não ordenada */
+.nav-bar ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Todos os 'a' da lista não ordenada (todos os links) */
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.70rem;
+}
+
+/*------------SOBRE NÓS------------*/
+/* Sessão que aborda tudo sobre a empresa */
+
+/* Container pai principal da sessão "sobre nós" */
+.about-us article {
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.87rem;
+}
+
+/* Container do título h2 */
+.about-us .first-block {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* h2 da sessão sobre nós */
+.about-us h2 {
+  font-size: 4rem;
+  padding: 30px 0 0 0;
+}
+
+/* Container pai dos textos e da imagem */
+.about-us .second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 0.8rem;
+}
+
+/* Descrição (texto) */
+.about-us .description {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 10px 0;
+}
+
+/* todos os parágrafos dentro do container da .description */
+.about-us .description p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  font-size: 1.5rem;
+}
+
+/* Imagem */
+.about-us img {
+  width: auto;
+  height: 31.25rem;
+}
+
+/* Container pai de saiba mais */
+.about-us .learn-more {
+  margin-bottom: 1rem;
+}
+
+/* link como texto em saiba mais */
+.about-us .learn-more a {
+  font-size: 1.50rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover em saiba mais */
+.about-us .learn-more:hover {
+  cursor: pointer;
+}
+
+/* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+.about-us .learn-more img {
+  width: 1.25rem;
+  height: auto;
+}
+
+/*------------SERVIÇOS------------*/
+/* Container contendo todos os serviços para agendamento */
+.services-section .container {
+  width: 100%;
+  gap: 4rem; /* Tamanho original: 2rem */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000;
+  padding: 20px;
+}
+
+/* Bloco pai que armazena cada serviço */
+.services-section .container .services {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%; 
+  height: auto;
+  border-radius: 50px;
+  gap: 3.75rem;
+  padding: 1.85rem 0;
+  box-sizing: border-box;
+}
+}
+
+@media(max-width: 414px) {
+  
+}
+
+@media(max-width: 375px) {
+  
+}
