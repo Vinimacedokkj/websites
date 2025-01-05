@@ -1,1 +1,1 @@
-Just a place to study copying some existents websites
+Just an error page
