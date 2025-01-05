@@ -1,0 +1,202 @@
+* {
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 5px solid green;
+    box-sizing: border-box;
+    background-color: #0a0a4f;
+}
+
+main {
+    border: 5px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.heading h1 {
+    color: #0a0a4f;
+    background-color: #d88209;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.heading p {
+    color: white;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.movie h2 {
+    color: #0a0a4f;
+    background-color: #d88209;
+    border-radius: 50px;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    flex-shrink: 1;
+}
+
+figcaption {
+    color: #fff;
+}
+
+.description {
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter {
+    border: 4px solid purple;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d88209;
+
+}
+
+.newsletter h2 {
+    color: #0a0a4f;
+    background-color: #d88209;
+    text-align: center;
+
+}
+
+.newsletter .button {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #0a0a4f;
+    color: #fff;
+}
+
+.newsletter .button:hover {
+    background-color: #0b0b31;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid white;
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    width: 20%;
+}
+
+#label1 {
+    border: 3px solid red;
+}
+
+#label2 {
+    border: 3px solid chartreuse;
+}
+
+footer {
+    border: 5px solid black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Falta adicionar:
+- responsividade
+- transformações, animações e transições para deixar o site bem mais bonito
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#movie1 {
+    border: 4px solid violet;
+}
+
+#movie2 {
+    border: 3px solid brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#movie3 {
+    border: 3px solid purple;
+}
+#movie4 {
+    border: 3px solid orange;
+}
+#movie5 {
+    border: 3px solid rebeccapurple;
+}
+#movie6 {
+    border: 3px solid blue;
+}
+#movie7 {
+    border: 3px solid aliceblue;
+}
+#movie8 {
+    border: 3px solid aqua;
+}
+#movie9 {
+    border: 3px solid palegreen;
+}
+#movie10 {
+    border: 3px solid burlywood;
+}

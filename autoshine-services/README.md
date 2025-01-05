@@ -6,3 +6,5 @@ Ainda tem muita coisa a ser feito, mas com o que já criei, posso considerar um 
 O esqueleto do site está totalmente completo, falta adicionar a responsividade e animações, mas isto já está em andamento
 
 OBS: A descrição, imagens e log foi tudo criação de IA para poupar meu tempo de ter que criar. O que de fato eu mesmo quem criei foi o design inteiro da página e o código em si.
+
+Projeto de um site completo da temática de uma Estética Automotiva

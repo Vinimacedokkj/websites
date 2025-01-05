@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .d-container-section-gallery {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-container-div-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .c-content-p-minititle {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 2px 10px;
+  }
+  
+  .d-container-section-gallery h2 {
+    margin: 10px;
+    font-size: 50px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .c-content-p-h2Description {
+    margin: 10px 20px 20px 20px;
+    font-size: 16px;
+  }
+
+  .c-d-container-div-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+    gap: 7px;
+  }
+
+  .c-content-img {
+    width: 200px;
+    height: 200px;
+  }
+
+@media (max-width: 350px) {
+  .d-container-section-gallery h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .c-content-p-h2Description {
+    text-align: center;
+  }
+
+@media (max-width: 510px) {
+  .c-content-img{
+    flex-wrap: nowrap;
+    }
+  
+  }
+}

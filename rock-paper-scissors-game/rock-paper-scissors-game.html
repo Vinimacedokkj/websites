@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper and Scissors'game</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 9.5rem;
+  height: 5rem;
+  border-radius: 30px;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
+button:active {
+  background-color: #b2b2b2;
+}
+
+p {
+  text-align: center;
+  font-size: 1.40rem;
+}
+
+</style>
+</head>
+<body>
+  <h1>Rock, Paper and Scissors game</h1>
+  
+  <div class="buttons">
+    <button onclick="rockFunction()">🗿</button>
+    <button onclick="paperFunction()">📃</button>
+    <button onclick="scissorsFunction()">✂</button>
+  </div>
+  
+  <p id="result"></p>
+<script>
+var pcPoints = 0;
+var playerPoints = 0;
+
+alert('This game finishes in 10 points, who make it first will be the winner.\nGood Luck!');
+
+function generateRandom() {
+  let pcPlay = Math.random();
+  
+  if (pcPlay >= 0 && pcPlay < 0.3) {
+    pcPlay = 'Rock';
+  } else if (pcPlay >= 0.3 && pcPlay < 0.6) {
+    pcPlay = 'Paper';
+  } else if (pcPlay >= 0.6 && pcPlay <= 1) {
+    pcPlay = 'Scissors';
+  }
+  
+  return pcPlay;
+}
+
+var finalResult = document.getElementById('result');
+
+// Rock function
+function rockFunction() {
+  let pcPlay = generateRandom();
+  
+  let playerPlay = 'Rock';
+  
+  if (playerPlay === 'Rock' && pcPlay === 'Rock') {
+    finalResult.innerHTML = `You 🗿 x 🗿 PC<br>${playerPoints}x${pcPoints}`;
+    
+  } else if (playerPlay === 'Rock' && pcPlay === 'Paper') {
+    pcPoints += 1; 
+    finalResult.innerHTML = `You 🗿 x 📃 PC<br>${playerPoints}x${pcPoints}`;
+    
+  } else if (playerPlay === 'Rock' && pcPlay === 'Scissors') {
+    playerPoints += 1;
+    finalResult.innerHTML = `You 🗿 x ✂ PC<br>${playerPoints}x${pcPoints}`;
+  }
+  
+  if (playerPoints == 10) {
+    alert(`You won\nFinal result: You ${playerPoints} x ${pcPoints} PC`);
+    pcPoints = 0;
+    playerPoints = 0;
+    finalResult.innerHTML = `Score reseted<br>You ${playerPoints} x ${pcPoints} PC`;
+} else if (pcPoints == 10) {
+    alert(`PC won\nFinal result: You ${playerPoints} x ${pcPoints} PC`);
+    pcPoints = 0;
+    playerPoints = 0;
+    finalResult.innerHTML = `Score reseted<br>You ${playerPoints} x ${pcPoints} PC`;
+  }
+}
+
+// Paper function
+function paperFunction() {
+  let pcPlay = generateRandom();
+  
+  let playerPlay = 'Paper';
+  
+  if (playerPlay === 'Paper' && pcPlay === 'Rock') {
+    playerPoints += 1;
+    finalResult.innerHTML = `You 📃 x 🗿PC<br>${playerPoints}x${pcPoints}`;
+    
+  } else if (playerPlay === 'Paper' && pcPlay === 'Paper') {
+    finalResult.innerHTML = `You 📃 x 📃 PC<br>${playerPoints}x${pcPoints}`;
+    
+  } else if (playerPlay === 'Paper' && pcPlay === 'Scissors') {
+    pcPoints += 1;
+    finalResult.innerHTML = `You 📃 x ✂ PC<br>${playerPoints}x${pcPoints}`;
+  }
+  
+  if (playerPoints == 10) {
+    alert(`You won\nFinal result: You ${playerPoints} x ${pcPoints} PC`);
+    pcPoints = 0;
+    playerPoints = 0;
+    finalResult.innerHTML = `Score reseted<br>You ${playerPoints} x ${pcPoints} PC`;
+    
+} else if (pcPoints == 10) {
+    alert(`PC won\nFinal result: You ${playerPoints} x ${pcPoints} PC`);
+    pcPoints = 0;
+    playerPoints = 0;
+    finalResult.innerHTML = `Score reseted<br>You ${playerPoints} x ${pcPoints} PC`;
+  }
+}
+
+// Scissros function
+function scissorsFunction() {
+  let pcPlay = generateRandom();
+  
+  let playerPlay = 'Scissors';
+  
+  if (playerPlay === 'Scissors' && pcPlay === 'Rock') {
+    pcPoints += 1;
+    finalResult.innerHTML = `You ✂ x 🗿 PC<br>${playerPoints}x${pcPoints}`;
+    
+  } else if (playerPlay === 'Scissors' && pcPlay === 'Paper') {
+    playerPoints += 1;
+    finalResult.innerHTML = `You ✂ x 📃 PC<br>${playerPoints}x${pcPoints}`;
+    
+  } else if (playerPlay === 'Scissors' && pcPlay === 'Scissors') {
+    finalResult.innerHTML = `You ✂ x ✂ PC<br>${playerPoints}x${pcPoints}`;
+}
+  
+  if (playerPoints == 10) {
+    alert(`You won\nFinal result: You ${playerPoints} x ${pcPoints} PC`);
+    pcPoints = 0;
+    playerPoints = 0;
+    finalResult.innerHTML = `Score reseted<br>You ${playerPoints} x ${pcPoints} PC`;
+} else if (pcPoints == 10) {
+    alert(`PC won\nFinal result: You ${playerPoints} x ${pcPoints} PC`);
+    pcPoints = 0;
+    playerPoints = 0;
+    finalResult.innerHTML = `Score reseted<br>You ${playerPoints} x ${pcPoints} PC`;
+  }
+}
+</script>
+</body>
+</html>

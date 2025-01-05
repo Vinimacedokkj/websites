@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/netflix logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+<!-- CONTAINER MAIOR -->
+<main class="main">
+
+    <!-- HEADER: contém a logo e o menu da direita -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/netflix logo complete.png" alt="Netflix Logo">
+        </div>
+
+        <!-- CONTAINER DA DIREITA: contém a escolha do idioma e botão de entrada  -->
+        <div class="right-menu">
+            <select id="language">
+                <option value="Portugues">Português</option>
+                <option value="English">English</option>
+            </select>
+
+            <button>Entrar</button>
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO INICIAL: Contém header, p, e formulário com email -->
+    <section class="initial-section">
+        <div>
+            <h1>Filmes, séries e muito mais, sem limites</h1>
+
+            <p class="firstText">A partir de R$ 20,90. Cancele quando quiser.</p>
+            <p class="secondText">Quer assistir? Informe seu email 
+                para criar ou reiniciar sua assinatura.</p>
+
+            <form>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="submit" value="Vamos lá &gt;">
+            </form>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
