@@ -53,16 +53,12 @@
     /************************** SERVIÇOS ***/
 
     .headline-servicos {
-        border: 5px solid blue;
-
         flex-direction: column;
         height: auto;
         
     }
 
     .titulo-servicos {
-        border: 3px solid brown;
-
         width: 100%;
         display: flex;
         align-items: center;
@@ -74,19 +70,13 @@
     }
 
     .descricao-servicos {
-        border: 3px solid aqua;
-
         width: 100%;
         text-align: left;
         font-size: 1.4rem;
     }
 
-    .card-titulo {
-        border: 3px solid brown;
-    }
-
     .card-titulo h1 {
-        font-size: 25px;
+        font-size: clamp(15px, 25px, 30px);
     }
 
     /************************** PORTFOLIO ***/
@@ -178,7 +168,7 @@
 
     .descricao-contato {
         width: 100%;
-        text-align: right;
+        text-align: left;
         font-size: 1.4rem;
     }
 
@@ -216,5 +206,12 @@
         width: auto;
         text-align: right;
         margin-top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .card-titulo h1 {
+        font-size: clamp(10px, 15px, 20px);
     }
 }
