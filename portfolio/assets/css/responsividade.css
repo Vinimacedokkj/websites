@@ -53,11 +53,16 @@
     /************************** SERVIÇOS ***/
 
     .headline-servicos {
+        border: 5px solid blue;
+
         flex-direction: column;
         height: auto;
+        
     }
 
     .titulo-servicos {
+        border: 3px solid brown;
+
         width: 100%;
         display: flex;
         align-items: center;
@@ -69,9 +74,19 @@
     }
 
     .descricao-servicos {
+        border: 3px solid aqua;
+
         width: 100%;
-        text-align: right;
+        text-align: left;
         font-size: 1.4rem;
+    }
+
+    .card-titulo {
+        border: 3px solid brown;
+    }
+
+    .card-titulo h1 {
+        font-size: 25px;
     }
 
     /************************** PORTFOLIO ***/
