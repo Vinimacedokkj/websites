@@ -167,15 +167,16 @@
     }
 
     .descricao-contato {
+        padding-left: 15px;
         width: 100%;
         text-align: left;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .descricao-contato a {
         text-decoration: none;
         color: var(--color-black);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 1.5px;
         line-height: 1.4;
         font-weight: bold;
@@ -209,8 +210,38 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+
+    /************************** SERVIÇOS ***/
+    .descricao-servicos p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /************************** FREE YOUR MIND ***/
+    .free-your-mind {
+        padding: 0;
+    }
     
+    .container-free-your-mind {
+        padding: 10px;
+    }
+    
+    .container-p {
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .hidden {
+        padding-right: 5px;
+        width: 50%;
+        font-size: 9px;
+        text-align: right;
+    }
+
+
     .card-titulo h1 {
         font-size: clamp(10px, 15px, 20px);
     }

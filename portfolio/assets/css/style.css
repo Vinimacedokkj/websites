@@ -18,6 +18,7 @@
     --color-destaque1: #f0ff4c;
     --color-destaque2: #34865f;
     --transform-scale: scale(1.2);
+    --padding-left: 5px;
 }
 
 /* Estilizando a barra de rolagem */
@@ -798,7 +799,16 @@ a {
     justify-content: flex-end;
 }
 
-.container-free-your-mind span {
+.free-your-mind {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-p {
+    color: var(--color-white);
+}
+
+.free-your-mind .container-free-your-mind span {
     color: var(--color-white);
     font-size: 15vw;
 }
@@ -1042,7 +1052,7 @@ a {
 
 .titulo-contato h1 {
     color: var(--color-black);
-    padding-left: 5px;
+    padding-left: var(--padding-left);
     width: 50%;
     font-size: 8vw;
     font-weight: lighter;
