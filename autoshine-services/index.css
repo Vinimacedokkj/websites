@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --fonte-pequena: 20px;
+  --fonte-media: 35px;
+  --fonte-grande: 60px;
+
+  --padding: 20px;
+
+  --gap-pequeno: 10px;
+  --gap-pequeno-maior: 20px;
+  --gap-medio: 35px;
+  --gap-grande: 40px;
+  --gap-grande-maior: 90px;
+
+  --cor-1: #1e3a8a;
+  --cor-2: #608bff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif, Arial, Helvetica;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: var(--fonte-media);
+  font-weight: normal;
+}
+
+h3 {
+  font-size: var(--fonte-pequena);
+  text-align: center;
+  padding: var(--padding);
+}
+
+/* *************** HEADER *************** */
+header {
+  background-color: rgba(67, 67, 67, 0.9);
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.header-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  padding: 6px;
+}
+
+.header-img img {
+  width: 75px;
+  height: auto;
+}
+
+.nav-menu {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: var(--padding);
+  gap: var(--gap-grande);
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu ul li a:hover {
+  color: var(--cor-2); 
+}
+/* fim do header */
+
+/* *************** INICIO *************** */
+.inicio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-pequeno);
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/img/others/home-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+}
+
+.inicio h1 {
+  font-size: var(--fonte-grande);
+  font-style: normal;
+}
+
+.inicio p {
+  font-size: var(--fonte-pequena);
+}
+/* fim inicio*/
+
+/* *************** SOBRE *************** */
+.about {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: var(--padding);
+  gap: var(--gap-medio);
+}
+
+.about-content {
+  display: flex;
+  width: 90%;
+  height: 100%;
+}
+
+.about-content p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-pequeno-maior);
+  padding-right: var(--padding);
+  width: 50%;
+}
+
+.paragraph {
+  display: inline-block;
+  font-size: var(--fonte-pequena);
+  width: 80%;
+}
+
+.about-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.about-img img {
+  width: auto;
+  height: 70%;
+}
+
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn-more-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn-more-container p {
+  font-size: var(--fonte-pequena);
+}
+/* fim sobre */
+
+/* *************** SERVIÇOS *************** */
+.services {
+  height: auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.services h2 {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+.all-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-grande-maior);
+  height: 100%;
+}
+
+.service-container {
+  background-color: var(--cor-1);
+  border-radius: 15px;
+  width: 25%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-pequeno);
+  height: 100%;
+}
+
+.service-container h3 {
+  font-size: var(--fonte-media);
+}
+
+.service-container img {
+  width: 90%;
+  height: 200px;
+}
+
+.service-container p {
+  padding: var(--padding);
+}
+
+.service-container button {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 99px;
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: var(--fonte-pequena);
+  font-weight: normal;
+  margin-bottom: var(--padding);
+}
