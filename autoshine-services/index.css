@@ -191,6 +191,7 @@ header {
 /* *************** SERVIÇOS *************** */
 .services {
   height: auto;
+  padding: var(--padding);
   background-color: #000;
   color: #fff;
 }
@@ -206,14 +207,15 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--gap-grande-maior);
+  padding: var(--padding);
   height: 100%;
 }
 
 .service-container {
   background-color: var(--cor-1);
   border-radius: 15px;
-  width: 25%;
-  height: 500px;
+  width: 28%;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -252,3 +254,91 @@ header {
   font-weight: normal;
   margin-bottom: var(--padding);
 }
+
+.service-container button:hover {
+  cursor: pointer;
+}
+/* fim serviços */
+
+/* *************** GALERIA *************** */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: var(--padding);
+}
+
+.gallery h2 {
+  text-align: center;
+  padding: var(--padding);
+}
+
+.full-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-pequeno);
+}
+
+.full-gallery img {
+  width: 20%;
+  height: auto;
+}
+/* fim galeria */
+
+/* *************** FOOTER *************** */
+footer {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding) 0;
+}
+
+footer h3 {
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  padding: var(--padding)  0 var(--padding) 0;
+}
+
+footer li {
+  list-style: none;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contato-social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medio);
+}
+
+
+.contato-social .contato{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contato-social .social-media ul {
+  display: flex;
+  gap: var(--gap-pequeno);
+}
+
+.footer-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  padding-top: var(--padding);
+  margin-top: var(--padding);
+}
+/* fim do footer */
