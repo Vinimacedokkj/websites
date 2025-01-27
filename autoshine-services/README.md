@@ -1,10 +1,6 @@
 # AutoShine-Services
-Olá, seja bem vindo ao meu primeiro projeto completo, da qual estou em andamento para criar um site do zero até o final, deixando o site totalmente responsivo e animado
+Olá, seja bem vindo ao meu primeiro projeto de site, este é um projeto de um site totalmente aleatório e fictício, onde a inteligência artificial gerou o nome, a logo e as imagens
 
-Ainda tem muita coisa a ser feito, mas com o que já criei, posso considerar um grande avanço em meus conhecimentos
+É como se eu tivesse obtido todos os assets do potencial cliente, então tudo que construi, em html, css e javascript foi dos meus conhecimentos para deixar o site desta forma. Até o design fui eu quem criei
 
-O esqueleto do site está totalmente completo, falta adicionar a responsividade e animações, mas isto já está em andamento
-
-OBS: A descrição, imagens e log foi tudo criação de IA para poupar meu tempo de ter que criar. O que de fato eu mesmo quem criei foi o design inteiro da página e o código em si.
-
-Projeto de um site completo da temática de uma Estética Automotiva
+É um site bem básico, porém por se tratar do meu primeiro site onde coloco em prática todos meus conhecimentos, fiquei muito feliz com o resultado
