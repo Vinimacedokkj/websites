@@ -214,7 +214,7 @@ header {
 .service-container {
   background-color: var(--cor-1);
   border-radius: 15px;
-  width: 28%;
+  width: 325px;
   height: 550px;
   display: flex;
   justify-content: center;
