@@ -1,0 +1,17 @@
+:root {
+    --fonte-pequena: 20px;
+    --fonte-pequena-maior: 26px;
+    --fonte-media: 35px;
+    --fonte-grande: 60px;
+
+    --padding: 20px;  
+
+    --gap-pequeno: 10px;
+    --gap-pequeno-maior: 20px;
+    --gap-medio: 35px;
+    --gap-grande: 40px;
+    --gap-grande-maior: 90px;
+
+    --cor-1: #1e3a8a;
+    --cor-2: #608bff;
+}

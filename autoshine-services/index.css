@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-:root {
-  --fonte-pequena: 20px;
-  --fonte-media: 35px;
-  --fonte-grande: 60px;
 
-  --padding: 20px;
-
-  --gap-pequeno: 10px;
-  --gap-pequeno-maior: 20px;
-  --gap-medio: 35px;
-  --gap-grande: 40px;
-  --gap-grande-maior: 90px;
-
-  --cor-1: #1e3a8a;
-  --cor-2: #608bff;
-}
 
 * {
   padding: 0;
@@ -30,6 +15,7 @@ body {
 h2 {
   font-size: var(--fonte-media);
   font-weight: normal;
+  padding: var(--padding);
 }
 
 h3 {
@@ -115,6 +101,7 @@ header {
 
 /* *************** SOBRE *************** */
 .about {
+  border: 3px solid orange;
   height: 120vh;
   display: flex;
   flex-direction: column;
@@ -125,15 +112,18 @@ header {
 }
 
 .about-content {
+  border: 3px solid hotpink;
   display: flex;
   width: 90%;
   height: 100%;
 }
 
 .about-content p {
+  border: 3px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
   gap: var(--gap-pequeno-maior);
   padding-right: var(--padding);
   width: 50%;
@@ -146,14 +136,16 @@ header {
 }
 
 .about-img {
+  border: 3px solid blue;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .about-img img {
+  border: 3px solid brown;
   width: auto;
-  height: 70%;
+  height: 500px;
 }
 
 .learn-more {
@@ -191,7 +183,7 @@ header {
 /* *************** SERVIÇOS *************** */
 .services {
   height: auto;
-  padding: var(--padding);
+  /* padding: var(--padding); */
   background-color: #000;
   color: #fff;
 }
@@ -199,7 +191,6 @@ header {
 .services h2 {
   display: flex;
   justify-content: center;
-  padding: var(--padding);
 }
 
 .all-services {
@@ -207,7 +198,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--gap-grande-maior);
-  padding: var(--padding);
+  padding-top: var(--padding);
   height: 100%;
 }
 
