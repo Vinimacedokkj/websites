@@ -66,10 +66,24 @@
 
   /* *************** SERVIÇOS *************** */
   .all-services {
-    
+    gap: var(--gap-medio);
   }
 
   .service-container {
     width: 350px;
+  }
+
+  /* *************** FOOTER *************** */
+  
+}
+
+@media (max-width: 700px) {
+  /* *************** INÍCIO *************** */
+  .inicio {
+    height: 90vh;
+  }
+
+  .inicio h1 {
+    font-size: 3rem;
   }
 }
